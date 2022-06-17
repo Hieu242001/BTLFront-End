@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Đăng nhập</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Demo Project">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./login.css">
+	<link rel="icon" type="image/png" href="../assets/img/logo.jpg">
+</head>
+
+<body>
+
+	<div class="loginbox">
+		<img src="img_2 (resized).jpg" class="avatar">
+		<h3>Đăng nhập</h3>
+		<form method="get" name="form" style="margin:auto">
+			<div>
+				<label for="username">Tên đăng nhập: </label>
+				<input type="text" name="username" id="username" placeholder="Nhập tên người dùng"
+					onfocus="hideNotification()" oninput="hideNotification()" autofocus>
+			</div>
+			<div>
+				<label for="password">Mật khẩu:</label>
+				<input type="password" name="password" id="password" placeholder="Nhập mật khẩu" minlength="4"
+					onfocus="hideNotification()" oninput="hideNotification()">
+			</div>
+			<input type="button" value="Đăng nhập" id="login" onclick="validate()">
+			<div class="notification hide">Thông tin đăng nhập không đúng!</div>
+		</form>
+	</div>
+	<script src="./login.js"></script>
+</body>
+
+</html>

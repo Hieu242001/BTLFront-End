@@ -1,0 +1,158 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: segoe ui , monospace;
+    }
+    
+    .containe {
+      margin-top:auto;
+      height: 1200px;
+      
+    }
+    
+    .home {
+        background-color: rgb(233, 159, 221);
+    }
+    
+    .home {
+        background-color: rgb(216, 175, 221);
+    }
+    ul.breadcrumb 
+    {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    text-decoration: none;
+    color:black;
+  }
+  ul.breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+  
+    .main {
+        width: 100%;
+        display:flex;
+        justify-content: space-evenly;
+        height: 650px;
+    }
+    
+    canvas {
+        
+        margin-top:-5rem;
+        padding: 10px;
+    }
+    
+    .table__1 {
+        display: flex;
+        width: 58%;
+        height: 350px;
+        
+       
+    }
+    .bieudo
+    {
+        margin-top:-300px;
+        width: 57%;
+        height: 760px;
+    }
+    .thunhap {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        height: inherit;
+    }
+    
+    .day,
+    .weak,
+    .month,
+    .trungbinh {
+        height: 50%;
+        width: 50%;
+        border: 1px solid gray;
+    }
+    h3
+    {
+        
+        background-color:greenyellow;
+        padding:10px;
+        position: relative;
+       
+    }
+    img
+    {
+       position: absolute;
+       left:20%;
+        max-width: 80%;
+        max-height: 90%;
+        object-fit: cover;
+       
+    }
+    .thongke {
+        width: 50%;
+        border:1px solid gray;
+        height: inherit;  
+        position: relative;
+    }
+    p {
+        text-align: right;
+    }
+    
+    div>p.head {
+
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+        
+
+    }
+    
+    h2 {
+        display:flex;
+        justify-content: center;
+    }
+    
+    .table {
+        height: 400px;
+        width: 100%;
+    }
+    
+    .list {
+        width: 38%;
+        box-sizing: border-box;
+        border: 1px solid black;
+        height: 650px;
+        overflow: scroll;
+    }
+    .dress {
+        float: left;
+        padding-left: 40px;
+    }
+    
+   
+    
+    .table table-striped {
+        overflow: hidden;
+    }
+     .return
+    {
+        position: absolute;
+        text-align: center;
+        right: 40px;
+        padding:20px;
+        bottom:90px;
+        background-color: wheat;
+        font-weight: bold;
+    } 

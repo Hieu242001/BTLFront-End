@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="testhoadon.css">
+	<link rel="icon" type="image/png" href="../assets/img/logo.jpg">
+
+</head>
+
+<body>
+	<ul class="breadcrumb">
+		<li><a href="../examples/Home.html">Trang chủ</a></li>
+		<li>Thống kê</li>
+	</ul>
+	
+	<div class="wrapper">
+		<h1 class="h1">Lịch sử thanh toán</h1>
+		<table id="table" class="table table-bordered cart_summary">
+			<thead>
+				<tr style="height: auto;">
+					<th class="cart_product">Sản phẩm</th>
+					<th>Giới thiệu</th>
+					<th>Tình trạng</th>
+					<th>Giá tiền(VNĐ)</th>
+					<th >Số lượng</th>
+					<th>Tổng</th>
+					<th class="action"><i class="fa fa-trash-o"></i>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="cart_product">
+						<a href="#"><img src="test1.jpg" alt="Product">
+						</a>
+					</td>
+					<td class="cart_description">
+						<p class="product-name"><a href="#">Trà bạc hà </a>
+						</p>
+						<small class="cart_ref">Mã:69696969</small>
+						<br>
+						<small><a href="#">Loại: Đặc biệt</a></small>
+						<br>
+						<small><a href="#">Cỡ: Nhỏ</a></small>
+					</td>
+					<td class="cart_avail"><span class="label label-success">Đã đặt</span>
+					</td>
+					<td class="price"><input class="form-control input-sm" type="text" value="25000" id="price"
+							readonly>
+					</td>
+					<td class="qty">
+						
+						<button type="button" class="fa fa-plus-circle" onclick="increaseValue()"></button>
+						<input class="form-control input-sm" type="text" value="4" id="number">
+						<button class="fa fa-minus-circle" type="button" onclick="reduceValue()"></button>
+					</td>
+					<td class="price">
+						<input class="form-control input-sm" type="text" value="0" id="giatri" disabled>
+					</td>
+					<td class="action">
+						<button class="fa fa-times" aria-hidden="true">
+					</td>
+				</tr>
+				<tr>
+					<td class="cart_product">
+						<a href="#"><img src="test2.jpg" alt="Product">
+						</a>
+					</td>
+					<td class="cart_description">
+						<p class="product-name"><a href="#">Trà đào </a>
+						</p>
+						<small class="cart_ref">Mã:69697878</small>
+						<br>
+						<small><a href="#">Loại: Đặc biệt</a></small>
+						<br>
+						<small><a href="#">Cỡ: Nhỏ</a></small>
+					</td>
+					<td class="cart_avail"><span class="label label-success">Đã đặt</span>
+					</td>
+					<td class="price"><input class="form-control input-sm" type="text" value="25000" id="price1"
+							readonly>
+					</td>
+					<td class="qty">
+
+						<button type="button" class="fa fa-plus-circle" onclick="increaseValue1()"></button>
+						<input class="form-control input-sm" type="text" value="3" id="number1">
+						<button class="fa fa-minus-circle" type="button" onclick="reduceValue1()"></button>
+					</td>
+					<td class="price">
+						<input class="form-control input-sm" type="text" value="0" id="giatri1" disabled>
+					</td>
+					<td class="action">
+						<button class="fa fa-times" aria-hidden="true">
+					</td>
+				</tr>
+				<tr>
+					<td class="cart_product">
+						<a href="#"><img src="test3.jpg" alt="Product">
+						</a>
+					</td>
+					<td class="cart_description">
+						<p class="product-name"><a href="#">Trà lipton </a>
+						</p>
+						<small class="cart_ref">Mã:1234567</small>
+						<br>
+						<small><a href="#">Loại: Vị chanh</a></small>
+						<br>
+						<small><a href="#">Cỡ: Vừa</a></small>
+					</td>
+					<td class="cart_avail"><span class="label label-success">Đã đặt</span>
+					</td>
+					<td class="price"><input class="form-control input-sm" type="text" value="20000" id="price2"
+							readonly>
+					</td>
+					<td class="qty">
+						<button type="button" class="fa fa-plus-circle" onclick="increaseValue2()"></button>
+						<input class="form-control input-sm" type="text" value="6" id="number2">
+						<button class="fa fa-minus-circle" type="button" onclick="reduceValue2()"></button>
+					</td>
+					<td class="price">
+						<input class="form-control input-sm" type="text" value="0" id="giatri2" disabled>
+					</td>
+					<td class="action">
+						<button class="fa fa-times" aria-hidden="true">
+					</td>
+				</tr>
+				<tr>
+					<td class="cart_product">
+						<a href="#"><img src="test4.jpg" alt="Product">
+						</a>
+					</td>
+					<td class="cart_description">
+						<p class="product-name"><a href="#">Nước cam </a>
+						</p>
+						<small class="cart_ref">Mã:987654321</small>
+						<br>
+						<small><a href="#">Loại: Vị cam</a></small>
+						<br>
+						<small><a href="#">Cỡ: Bự</a></small>
+					</td>
+					<td class="cart_avail"><span class="label label-success">Đã đặt</span>
+					</td>
+					<td class="price"><input class="form-control input-sm" type="text" value="25000" id="price3"
+							readonly>
+					</td>
+					<td class="qty">
+
+						<button type="button" class="fa fa-plus-circle" onclick="increaseValue3()"></button>
+						<input class="form-control input-sm" type="text" value="2" id="number3">
+						<button class="fa fa-minus-circle" type="button" onclick="reduceValue3()"></button>
+					</td>
+					<td class="price">
+						<input class="form-control input-sm" type="text" value="0" id="giatri3" disabled>
+					</td>
+					<td class="action">
+						<button class="fa fa-times" aria-hidden="true">
+					</td>
+				</tr>
+				<tr>
+					<td class="cart_product">
+						<a href="#"><img src="./test5.jpg" alt="Product">
+						</a>
+					</td>
+					<td class="cart_description">
+						<p class="product-name"><a href="#">Nước chanh leo </a>
+						</p>
+						<small class="cart_ref">Mã:#987654321</small>
+						<br>
+						<small><a href="#">Loại: Đặc biệt</a></small>
+						<br>
+						<small><a href="#">Cỡ: Bự</a></small>
+					</td>
+					<td class="cart_avail"><span class="label label-danger">Đã hủy</span>
+					</td>
+					<td class="price"><input class="form-control input-sm" type="text" value="20000" id="price4"
+							readonly>
+					</td>
+					<td class="qty" >
+
+						<button type="button" class="fa fa-plus-circle" onclick="increaseValue4()"></button>
+						<input class="form-control input-sm" type="text" value="4" id="number4">
+						<button class="fa fa-minus-circle" type="button" onclick="reduceValue4()"></button>
+					</td>
+					<td class="price">
+						<input class="form-control input-sm" type="text" value="0" id="giatri4" disabled>
+					</td>
+					<td class="action">
+						<button class="fa fa-times" aria-hidden="true">
+					</td>
+				</tr>
+				<tr>
+					<td class="cart_product">
+						<a href="#"><img src="test6.jpg" alt="Product">
+						</a>
+					</td>
+					<td class="cart_description">
+						<p class="product-name"><a href="#">Nước dứa </a>
+						</p>
+						<small class="cart_ref">Mã:987654321</small>
+						<br>
+						<small><a href="#">Loại: Mật ong</a></small>
+						<br>
+						<small><a href="#">Cỡ: Vừa</a></small>
+					</td>
+					<td class="cart_avail"><span class="label label-warning">Đang xử lý</span>
+					</td>
+					<td class="price"><input class="form-control input-sm" type="text" value="25000" id="price5"
+							readonly>
+					</td>
+					<td class="qty">
+
+						<button type="button" class="fa fa-plus-circle" onclick="increaseValue5()"></button>
+						<input class="form-control input-sm" type="text" value="9	" id="number5">
+						<button class="fa fa-minus-circle" type="button" onclick="reduceValue5()"></button>
+					</td>
+					<td class="price">
+						<input class="form-control input-sm" type="text" value="0" id="giatri5" disabled>
+					</td>
+					<td class="action">
+						<button class="fa fa-times" aria-hidden="true"></button>
+					</td>
+				</tr>
+				<tr>
+					<td class="cart_product">
+						<a href="#"><img src="test.png" alt="Product">
+						</a>
+					</td>
+					<td class="cart_description">
+						<p class="product-name"><a href="#">Sinh tố bơ </a>
+						</p>
+						<small class="cart_ref">Mã:#987654321</small>
+						<br>
+						<small><a href="#">Loại: Bình thường</a></small>
+						<br>
+						<small><a href="#">Cỡ: Vừa</a></small>
+					</td>
+					<td class="cart_avail"><span class="label label-danger">Đã hủy</span>
+					</td>
+					<td class="price"><input class="form-control input-sm" type="text" value="25000" id="price6"
+							readonly>
+					</td>
+					<td class="qty">
+
+						<button type="button" class="fa fa-plus-circle" onclick="increaseValue6()"></button>
+						<input class="form-control input-sm" type="text" value="0" id="number6">
+						<button class="fa fa-minus-circle" type="button" onclick="reduceValue6()"></button>
+					</td>
+					<td class="price">
+						<input class="form-control input-sm" type="text" value="0" id="giatri6" disabled>
+					</td>
+					<td class="action">
+						<button class="fa fa-times" aria-hidden="true">
+					</td>
+				</tr>
+
+			</tbody>
+			<tfoot>
+				<tr style="height: auto;">
+					<td colspan="2" rowspan="2"></td>
+					<td colspan="3"><b>Tổng giá tiền (cả thuế 8%)<b></td>
+					<td colspan="2"><input type="button" value='Tính' onclick="tinh()" class="cole"><input id="tonggiatri"
+							class="sum" value="0" readonly></td>
+				</tr>
+
+			</tfoot>
+		</table>
+		<div class="cart_navigation ">
+			<a class="prev-btn" href="../examples/Home.html">Quay lại</a>
+
+		</div>
+	</div>
+	<script src="testhoadon.js"></script>
+</body>
+
+</html>

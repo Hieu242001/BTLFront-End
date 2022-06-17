@@ -1,0 +1,106 @@
+<!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="Demo Project">
+		<title>Javacrpit 4</title>
+		<link rel="stylesheet" href="bt2.css">
+		<script src="https://kit.fontawesome.com/9ed593a796.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+		<section class="page-wrapper">
+			<div class="box">
+				<form name="frmAccount" action="acb.jsp" >
+						
+								<h1><b>Thông tin khách hàng</b></h1>
+					<table>
+						<tr>
+							<td>Mã khách hàng</td>
+							<td><input type="text" name="id" id="id" required placeholder="Điền 4-11 kí tự cả chữ lẫn số" ></td>
+							<td><span class="check check1"></span></td>
+						</tr>
+						<tr>
+							<td>Họ và tên</td>
+							<td><input type="text" name="tname" id="tname" required ></td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Mã vùng</td>
+							<td><input type="text" name="zip" id="zip" placeholder="Điền 5 số"></td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Quốc gia khai sinh</td>
+							<td><select name="country" id="country" required >
+									<option value="1">Việt Nam</option>
+									<option value="2">Mỹ</option>
+									<option value="3">Anh</option>
+									<option value="4">Trung Quốc</option>
+									<option value="5">Nhật Bản</option>
+									<option value="6">Ấn Độ</option>
+									<option value="7">Nơi khác</option>
+								</select></td>
+						</tr>
+					
+					
+							<td>Email</td>
+							<td><input type="text" name="email" id="email" required placeholder="ex...@gmail.com"></td>
+							<td><span class="check"></span></td>
+						</tr>
+							<tr>
+							<td>Số điện thoại </td>
+							<td><input type="text" name="phone" id="phone" required placeholder="+84"></td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+						<tr>
+							<td>Giới tính</td>
+							<td>
+								<input type="radio" name="gender" id="male" >
+								<label >Nam</label>
+								<input type="radio" name="gender" id="female">
+								<label >Nữ</label>
+								<input type="radio" name="gender" id="other">
+								<label >Khác</label>
+							</td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Ngôn ngữ</td>
+							<td>
+								<input type="radio" name="language" id="english" >
+								<label for="english">Tiếng Anh</label>
+								<input type="radio" name="language" id="vietnam">
+								<label for="non-english">Tiếng việt</label>
+								<input type="radio" name="language" id="other">
+								<label for="non-english">Ngôn ngữ khác</label>
+							</td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Thông tin khác</td>
+							<td><textarea name="" id="content1" rows="5"placeholder="Tùy chọn"></textarea></td>
+						</tr>
+					</table>
+					
+					
+				</form>
+				<div class="submit">
+					<a><button  class="button" onclick="checkAll()">Hoàn tất đơn </a> 
+					<a href="../examples/Home.html"><button class="button">Trở lại</button></a> 
+						
+				</div>
+			</div>
+			
+			</section>
+			
+				
+				
+			
+			<script src="bt2.js"></script>	
+</body>
+</html>

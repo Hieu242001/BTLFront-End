@@ -1,0 +1,126 @@
+*{
+    background-color: #F5F5DC;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+}
+ul.breadcrumb 
+    {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    text-decoration: none;
+    color:black;
+  }
+  ul.breadcrumb li a:hover {
+    text-decoration: underline;
+  }
+  
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+}
+th
+{
+    text-align: left;
+}
+td,th{
+    width: 20%;
+}
+tr
+{
+    border-bottom: 1px solid #FFFAF0;
+    height: 80px;
+}
+.text-center
+{
+    text-align: center;
+}
+
+.text-right
+{
+    text-align: right;
+}
+input,select,label
+{
+    font-size:18px;
+    padding: 0 10px;
+}
+input,select
+{
+    border-radius: 5px;
+    height: 30px;
+}
+form input
+{
+    padding:0;
+    margin:0;
+}
+
+button
+{
+    cursor: pointer;
+  
+}
+table button
+{
+    border: red;
+    width: 70px;
+    height: 45px;
+    border-radius:2px;
+}
+
+table button, table i   
+{
+    color: white;
+    background-color: rgb(214, 15, 15);
+    
+}
+form
+{
+  margin-left: 0.5rem;
+  font-size:20px;
+  
+}
+form button
+{
+    padding:15px;
+    font-size: inherit;
+    border-radius:2px;
+    display:inline-block;
+}
+
+form button:hover
+{
+    background-color:#E6E6FA;
+    opacity: 1.2;
+}
+form a
+{
+    text-decoration: none;
+    border: 2px solid 	rgb(13, 13, 13);
+    padding:20px;
+    border-radius:3px;
+}
+
+form a:hover
+{
+    text-decoration: underline;
+    background-color:#E6E6FA;
+}
+
